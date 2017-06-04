@@ -8,13 +8,15 @@
               <p><%= flash[:error] %></p>
             </div>
           <% end %>
+          <h4>Vous pouvez dés à présent rentrer vos données bancaires en cliquant sur le lien ci-dessous </h4>
           <label class="amount">
-            <span><%= @don.price.to_i %></span>
+            <!--<span><%= @don.price.to_i %></span>-->
           </label>
         </article>
          <%= hidden_field_tag :don_id,  @don.id %>
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                 data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                data-label="Payez avec votre carte bleue"
                 data-description="IPE don Ramadan"
                 data-amount="<%= @don.price.to_i*100 %>"
                  data-currency ="eur"

@@ -48,9 +48,10 @@
                    </li>
                    <li>
                        <a href="#" class="scroll-link" data-id="contact">Contact</a>
-                    <li>
-          <%= button_to "Faire un don à l'IPE", new_don_path, :class =>
-        "btn btn-primary navbar-btn", :method => :get %>
+                    <li >
+                       <a href="#" class="scroll-link" data-id="zone_don" role="button"><em>FAIRE UN DON</em></a>
+          <!--<%= button_to "Faire un don à l'IPE", new_don_path, :class =>
+        "btn btn-primary navbar-btn",  :method => :get %>-->
 
             </li>
           </ul>
@@ -67,8 +68,8 @@
     <div class="container">
     <div class="row">
       <div class="col-md-4 col-sm-6 footerleft " id ="contact">
-        <div class="logofooter"> Logo</div>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+        <div class="logofooter"> Qui nous sommes ?</div>
+        <p>L'IPE est établissement privé d'enseignement de l'île de la reunion</p>
 
 
       </div>
@@ -76,16 +77,15 @@
       <div class="col-md-4 col-sm-6 paddingtop-bottom">
         <h6 class="heading7">Notre adresse</h6>
         <div class="post">
-          <p><i class="fa fa-map-pin"></i> 210, Aggarwal Tower, Rohini sec 9, New Delhi -        110085, INDIA</p>
+          <p><i class="fa fa-map-pin"></i> 40 rue victor le vigoureux St-pierre 97410,St-pierre de la reunion - France/p>
           <p><i class="fa fa-phone"></i> Phone (India) : +91 9999 878 398</p>
           <p><i class="fa fa-envelope"></i> E-mail : info@webenlance.com</p>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 paddingtop-bottom">
+          <%= link_to(image_tag("/facebook.png", :alt => "home image", class: "img_logo"), root_path) %> Visiter notre page Facebook
         <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-height="300" data-small-header="false" style="margin-bottom:15px;" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-          <div class="fb-xfbml-parse-ignore">
-            <blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
-          </div>
+
         </div>
       </div>
     </div>

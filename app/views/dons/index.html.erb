@@ -14,7 +14,7 @@
         </div>
       </div>
     <div class="row">
-      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="video_zone">
         <div class="embed-responsive embed-responsive-4by3">
         <iframe   width="760" height="415"
         src="https://www.youtube.com/embed/2BcaBGJbMrE"
@@ -22,13 +22,13 @@
         </iframe>
       </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-        <h2 class=title_mission>Souvons l'IPE</h2>
-          <h1 class="objectif">Objectif : 15000 €</h1>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="zone_infos">
+        <h2 class=title_mission>Soutenons l'IPE</h2>
+          <h1 class="objectif">Objectif : <em>15000</em> €</h1>
         <h1>Financé à <br/><%= @pourcentage  %> % </h1>
 
-        <%= button_to "Faire un don à l'IPE", new_don_path, :class =>
-       "btn btn-secondary btn-lg btn-block", :method => :get %>
+        <!--<%= button_to "Faire un don à l'IPE", new_don_path, :class =>
+       "btn btn-secondary btn-lg btn-block", :method => :get %>-->
       </div>
 
     </div>
@@ -39,16 +39,54 @@
 
 
   <div class="jumbotron" id="africa">
+    <div class="container marketing" id ="chiffres">
     <div class="text-center">
-      <h1>L'IPE C'EST QUOI</h1>
-      <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. <br/>
-        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
-        Cras justo odio, dapibus ac facilisis in, egestas eget quam. <br/>
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
-          Cras justo odio, dapibus ac facilisis in, <br/>egestas eget quam. <br/>
-            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-      <p><a class="btn btn-lg btn-success" href="#" role="button">Faire un don</a></p>
+      <h1>L'IPE c'est quoi ?</h1>
     </div>
+
+    <!-- START THE FEATURETTES -->
+
+     <hr class="featurette-divider">
+
+     <div class="row featurette">
+       <div class="col-md-7">
+         <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+       </div>
+       <div class="col-md-5">
+         <img class="featurette-image img-responsive center-block" src="/balade.jpg" >
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+
+     <div class="row featurette">
+       <div class="col-md-7 col-md-push-5">
+         <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+       </div>
+       <div class="col-md-5 col-md-pull-7">
+         <img class="featurette-image img-responsive center-block" src="/enfant_labo.jpg" >
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+
+     <div class="row featurette">
+       <div class="col-md-7">
+         <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+       </div>
+       <div class="col-md-5">
+         <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+       </div>
+     </div>
+
+     <hr class="featurette-divider">
+
+     <!-- /END THE FEATURETTES -->
+
+   </div>
    </div>
 
 
@@ -90,14 +128,16 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-3 col-sx-12" id="zone">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-sx-12" >
       <h1>Comment faire un don ?</h1>
+      <h3></h3>
+      <h3><i class="fa fa-credit-card" aria-hidden="true"> .Effectuez un don en ligne de manière sécurisé </i></h3>
+      <h3><i class="fa fa-university" aria-hidden="true"> .Par virement : <BR/><b>IBAN FR76 1871 9000 8300 0064 3600 044</b> </i></h3>
+      <h3><i class="fa fa-pencil-square" aria-hidden="true">. Par chèque à l'ordre de <b>IPE </b><br/>40 rue victor le vigoureux St-pierre 97410</i></h3>
     </div>
-      <div class="col-lg-4 col-md-4 col-sm-3 col-sx-12" id="zone">
-     <%= simple_form_for(@don, html: { class: 'form-horizontal', id: "add_plat" }) do |f| %>
-      <%= f.text_field :price , :placeholder => "Votre don", class:"form-control"%>
-      <%= f.submit :value => "Validez votre annonce",  :class => "btn btn-lg btn-primary btn-block"%>
-    <% end%>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-sx-12" id="zone_don">
+        <h3 class="text_payment">Donnez via un paiment sécurisé</h3>
+     <%= render "form"%>
       </div>
   </div>
 </div>

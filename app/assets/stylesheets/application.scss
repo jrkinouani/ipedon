@@ -1,6 +1,7 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "font-awesome";
 #om
 {
   height: 300px;
@@ -54,7 +55,7 @@
 #zone
 {
   margin-top: 230px;
-  margin-top: 230px;
+  margin-bottom: 200px;
 }
 section{
   margin-top: 130px;
@@ -87,14 +88,14 @@ input.btn.btn-primary.navbar-btn
 h2.title_mission
 {
   font-weight: 400;
-
+  font-size: 40px;
 }
 h1.title
 {
   margin-top: 50px;
   margin-bottom: 10px;
   font-size: 3.8rem !important;
-  color: black;
+  color: #00a1c9;
 }
 p.text01
 {
@@ -111,7 +112,7 @@ footer
 .container.marketing
 {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 i.fa.fa-child
 {
@@ -129,4 +130,44 @@ h1.title_chiffre
 {
   margin-top: 30px;
   margin-bottom: 60px;
+}
+#zone_don
+{
+  background: #ffd625;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+.form-control
+{
+  margin-bottom: 20px;
+}
+#video_zone
+{
+  margin-bottom: 30px;
+}
+.jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #f4f4f4;
+}
+h3.text_payment
+{
+  color: black;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+em{
+color: #b40060;
+}
+#zone_infos
+{
+    background: #ffd625;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+aside{
+  height: 500px;
 }

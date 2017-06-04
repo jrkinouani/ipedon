@@ -13,7 +13,7 @@ class DonsController < ApplicationController
     prices.each {|price| @total = @total + price}
     @pourcentage = @total*100/15000
 
-    #@people = 0
+    # => @people = 0
     #person = []
     #Don.all.each{|don| person << don}
     #person.each {|person| @people = @people + person}
@@ -37,7 +37,7 @@ class DonsController < ApplicationController
 
     private
   def don_params
-    params.require(:don).permit(:price)
+    params.require(:don).permit(:price, :pseudo)
   end
 
   def find_don

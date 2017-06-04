@@ -1,1 +1,10 @@
-<h2 >merci you paid <strong><%= @don.price %></strong>!</h2>
+<aside>
+  <div class="row">
+  <div class="col-md-offset-4 col-lg-4 col-md-4 col-sm-3 col-sx-10" id="zone">
+        <h1 class="zone"> Mr ou Mme <%= @don.pseudo %> L'IPE et ses élèves vous remercient de votre don </h1>
+        <div class="text-center">
+    <h3><%= link_to 'Passez au paiement', new_charge_path(don_id: @don.id), :class => "btn btn-primary" %></h3>
+  </div>
+  </div>
+  </div>
+</aside>
