@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class=" col-lg-4 col-md-offset-4 col-md-4 col-xs-12" id="zone">
+      <%= form_tag charges_path do %>
+        <article>
+          <% if flash[:error].present? %>
+            <div id="error_explanation">
+              <p><%= flash[:error] %></p>
+            </div>
+          <% end %>
+          <label class="amount">
+            <span><%= @don.price.to_i %></span>
+          </label>
+        </article>
+         <%= hidden_field_tag :don_id,  @don.id %>
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+                data-description="IPE don Ramadan"
+                data-amount="<%= @don.price.to_i*100 %>"
+                 data-currency ="eur"
+                data-locale="auto"></script>
+      <% end %>
+    </div>
+  </div>
+</div>

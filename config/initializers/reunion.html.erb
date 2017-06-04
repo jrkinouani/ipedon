@@ -1,0 +1,25 @@
+<section class="house">
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        <h3 class="title_reunion">Bienvenu sur la page des locations de logements à long terme sur l'île de la reunion</h3>
+      </div>
+    </div>
+    <div class="row">
+      <% @logements.each do |logement| %> <!--link_to "galerie photo" , :id -> logement.id-->
+              <div class="col-md-4 col-sm-4 hero-feature">
+                  <div class="thumbnail" id="thumbnail_thumbnail">
+                      <img src="<%= logement.image1.url %>" alt="" class="img_home">
+                      <div class="caption">
+                          <h5 class="desc_home"><%= logement.city.capitalize %>, <%= logement.desc_home %> </h5>
+                          <p>
+                              <h5 class="price"><%= logement.price %> € </h5>
+                              <%= link_to "Plus d'infos" ,  galerie_path(:id => logement.id)%>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+            <% end %>
+      </div>
+  </div>
+</section>

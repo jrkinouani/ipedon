@@ -1,3 +1,132 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+#om
+{
+  height: 300px;
+}
+@media(min-width:768px) {
+  .navbar-default {
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    padding: 15px 0;
+    background: transparent;
+    border-radius: transparent;
+    /* Add additional styles here for the UNCOLLAPSED state */
+  }
+  .navbar-default.affix {
+    padding: 0;
+    background: #fff;
+
+    /* Add additional styles here for the COLLAPSED state */
+  }
+}
+.navbar-default {
+    border-color: transparent;
+    height: 120px;
+      background: #ffd625;
+}
+.navbar-default .navbar-brand {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar-default.affix .navbar-nav > li > a {
+    color: #00a1c9;
+}
+.navbar-default .navbar-nav > li > a {
+    color: black;
+    font-weight: bold;
+    margin-top: 25px;
+    font-size: 20px;
+}
+/*header
+{
+  padding-top: 300px;
+  text-align: center;
+  background-image: url(/college.jpg);
+  height: 650px;
+  background-size: cover;
+  background-repeat:no-repeat;
+  color: red;
+}*/
+#zone
+{
+  margin-top: 230px;
+  margin-top: 230px;
+}
+section{
+  margin-top: 130px;
+}
+img.img_logo
+{
+  height: 20%;
+  width: 20%;
+}
+.video-wrapper {
+	max-width: 100%;
+
+}
+input.btn.btn-secondary.btn-lg.btn-block
+{
+  margin-top: 20px;
+  font-size: 14px;
+  height: 60px;
+  background: #b40060;
+  color: white;
+}
+input.btn.btn-primary.navbar-btn
+{
+  margin-top: 20px;
+  font-size: 14px;
+  height: 60px;
+  background: #b40060;
+
+}
+h2.title_mission
+{
+  font-weight: 400;
+
+}
+h1.title
+{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-size: 3.8rem !important;
+  color: black;
+}
+p.text01
+{
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+footer
+{
+    background: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.container.marketing
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+i.fa.fa-child
+{
+  font-size: 100px;
+}
+i.fa.fa-users
+{
+  font-size: 100px;
+}
+i.fa.fa-building
+{
+  font-size: 100px;
+}
+h1.title_chiffre
+{
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
