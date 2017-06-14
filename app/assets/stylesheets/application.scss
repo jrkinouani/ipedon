@@ -106,15 +106,16 @@ h2.title_mission
 }
 h1.title
 {
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 3.8rem !important;
   color: #00a1c9;
+  font-family: "Comfortaa-Light";
 }
 p.text01
 {
   margin-bottom: 30px;
   font-size: 18px;
+  font-family: "Comfortaa-Light";
 }
 footer
 {
@@ -122,6 +123,7 @@ footer
     color: white;
     padding-top: 50px;
     padding-bottom: 30px;
+    font-family: "Comfortaa-Light";
 }
 .container.marketing
 {
@@ -144,12 +146,14 @@ h1.title_chiffre
 {
   margin-top: 30px;
   margin-bottom: 60px;
+  font-family: "Comfortaa-Light";
 }
 #zone_don
 {
   background: #ffd625;
     padding: 40px;
     margin-bottom: 30px;
+    font-family: "Comfortaa-Light";
 }
 .form-control
 {
@@ -165,6 +169,7 @@ h1.title_chiffre
     margin-bottom: 30px;
     color: inherit;
     background-color: #f4f4f4;
+    font-family: "Comfortaa-Light";
 }
 h3.text_payment
 {
@@ -172,18 +177,28 @@ h3.text_payment
   text-align: center;
   margin-top: 0px;
   margin-bottom: 30px;
+  font-family: "Comfortaa-Light";
 }
 #zone_infos
 {
     background: #ffd625;
     padding: 40px;
     margin-bottom: 30px;
+    font-family: "Comfortaa-Light";
+}
+h1.zone{
+  font-size: 18px;
+  font-family: "Comfortaa-Light";
 }
 aside{
   height: 500px;
 }
-article{
+article.index{
   background-color:  #f4f4f4;
   padding-bottom: 70px;
   padding-top: 70px;
+}
+#paypay
+{
+    font-family: "Comfortaa-Light";
 }
