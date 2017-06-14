@@ -3,12 +3,16 @@
     <section>
       <div class="row">
         <div class="text-center">
-          <h1 class="title">Soutenons l'IPE</h1>
+          <h1 class="title">Soutenons le collège</h1>
           <p class="text01">
-            Blalalalala alalallalalalallalalalalalalalalalalalalalalal
-            Blalalalala alalallalalalallalalalalalalalalalalalalalalal<br/>
-            Blalalalala alalallalalalallalalalalalalalalalalalalalalal
-            Blalalalala alalallalalalallalalalalalalalalalalalalalalal<br/>
+            L'IPE et le collège Dina Morgabine ont besoin de vous. En ce mois béni
+            de Ramadan,faites un don et oeuvrez pour l'au-dela.<br/> Le Prophète ( sur lui soit la paix)
+            faisait preuve d'une grande générosité durant ce mois si particulier. <br/> Engagez-vous
+            donc pour l'éducation de nos enfans en soutenant massivement ce projet réunionnais,
+            Les familles <br/> nous font de plus en plus confiance, aidez-nous à être à la hauteur !
+            Nous comptons sur vous !
+            <br/>
+
 
           </p>
         </div>
@@ -16,17 +20,20 @@
     <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12" id="video_zone">
         <div class="embed-responsive embed-responsive-4by3">
-        <iframe   width="760" height="415"
-        src="https://www.youtube.com/embed/2BcaBGJbMrE"
-        frameborder="0" allowfullscreen>
+
+          <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/rxz1ulQu-J4"
+          frameborder="0" allowfullscreen>
         </iframe>
+
       </div>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="zone_infos">
         <h2 class=title_mission>Soutenons l'IPE</h2>
           <h1 class="objectif">Objectif : <em>15000</em> €</h1>
-        <h1>Financé à <br/><%= @pourcentage  %> % </h1>
 
+        <h1>Financé à <br/><%= @pourcentage  %> % </h1>
+        <h3> Participants : <%= @donor %> </h3>
         <!--<%= button_to "Faire un don à l'IPE", new_don_path, :class =>
        "btn btn-secondary btn-lg btn-block", :method => :get %>-->
       </div>
@@ -40,10 +47,22 @@
 
   <div class="jumbotron" id="africa">
     <div class="container marketing" id ="chiffres">
-    <div class="text-center">
-      <h1>L'IPE c'est quoi ?</h1>
+      <div class="row">
+      <div class="text-center">
+        <h1>Présentation de L'IPE </h1>
+      </div>
     </div>
-
+      <div class="row">
+        <p  class="text-center">
+        L'association IPE-Institut Privé d'Enseignement souhaite rendre à l'île de la Reunion
+        et à ses habitants <br/> ce qu'ils nous ont tant donné depuis près de 150 ans. Protéger et renforcer
+        son harmonie, <br/> promouvoir notre "reunionnité", proposer au monde notre témoignage...Un enjeu de
+        taille que l'IPE souhaite relever.<br/>
+        C'est dans cette optique que l'association décide de prendre sa part dans le défi de l'éducation
+        et de la formation de notre jeunesse. En aout 2014, l'IPE ouvre un colège ouvert à tous,
+        Dina Morgabine. Un nom de chargé d'histoire, <br/> tel un rappel de nos racines...
+        </p>
+    </div>
     <!-- START THE FEATURETTES -->
 
      <hr class="featurette-divider">
@@ -80,6 +99,17 @@
 
   <div class="container marketing" id ="chiffres">
     <div class="text-center">
+        <h1 class="title_chiffre">Projet d'établissement</h1>
+        <h3>
+          Notre projet se veut une contribution, avec d'autres à l'édification d'une société forte
+          et meilleure.<br/> S'entraider à comprendre et à remplir son rôle dans cette vie, en
+          comprenant ses besoins et en ayant le sens des priorités, est un grand défi
+           et une grande responsabilité.
+        </h3>
+    </div>
+
+
+    <div class="text-center">
         <h1 class="title_chiffre">Chiffres clés</h1>
     </div>
     <!-- Three columns of text below the carousel -->
@@ -88,8 +118,11 @@
       <div class="text-center">
         <i class="fa fa-child" aria-hidden="true"></i>
 
-        <h2>Eleves</h2>
-        <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <h2>Elèves</h2>
+        <p>
+          A la rentrée d'août 2017, l'établissement comptera près de 95 élèves in-cha Allah,
+           avec l'ouverture d'une classe de 3ème et d'une classe de CM2;
+        </p>
 
       </div>
       </div><!-- /.col-lg-4 -->
@@ -97,9 +130,13 @@
           <div class="text-center">
             <i class="fa fa-users" aria-hidden="true"></i>
 
-            <h2>Professeurs</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-
+            <h2> Professeurs</h2>
+            <p>
+              15 professeurs et intervenants salariés ou bénévoles constituent l'équipe
+              pédagogique pilotée par un responsable pédagogique. Une place importante est donnée aux langues
+              au sein du collège : La maitrise des langues est en effet indispensable pour la formation des
+              "Zarboutans" du futur. L'anglais, l'arabe et l'espagnol sont ainsi enseignés.
+            </p>
          </div>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
@@ -107,8 +144,10 @@
             <i class="fa fa-building" aria-hidden="true"></i>
 
             <h2>Administration</h2>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-
+            <p>
+              L'administration est constitué de quatre personnes qui sont dévoués pleinement à
+              la reussite et la bonne gestion du collège.
+            </p>
          </div>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
@@ -129,3 +168,22 @@
       </div>
   </div>
 </div>
+
+<article>
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+      <h1 class="title_chiffre">Evènements culturels et sorties</h1>
+      <h3>
+        L'IPE c'est aussi différents évènements pour se faire connaître et récolter des fonds :<br/>
+        - En octobre 2016, une sortie a été organisée à St-Philippe à l'attention des élèves de CE2, CM1, et CM2
+        du sud de l'île pour découvrir la richesse de la flore réunionnaise au "jardin des parfums et
+        des épices".<br/>
+        - Le 30 Avril 2017, une conférene assurée par une diététicienne-nutritionniste sur le thème
+        de "Quelle alimentation pour la famille musulmane ?" à réuni une centaine de participantes à
+        St-pierre.
+      </h3>
+    </div>
+  </div>
+</div>
+</article>

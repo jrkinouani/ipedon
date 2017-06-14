@@ -13,11 +13,13 @@ class DonsController < ApplicationController
     prices.each {|price| @total = @total + price}
     @pourcentage = @total*100/15000
 
-    # => @people = 0
-    #person = []
-    #Don.all.each{|don| person << don}
-    #person.each {|person| @people = @people + person}
-    #@donor = @people+1
+    #@pbar = 0 #pbar bar de progression
+    #bar = []
+    #Don.all.each{|don| bar << pourcentage}
+    #bar.each{|pourcentage| @pbar= @pbar + pourcentage}
+    #@progressbar = @pbar*100/100
+
+    @donor = Don.count
 
   end
 

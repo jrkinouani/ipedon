@@ -2,6 +2,12 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
+ @font-face
+ {
+   font-family: "Comfortaa";
+   src: url('/assets/fonts/Comfortaa-Light');
+ }
+
 #om
 {
   height: 300px;
@@ -26,21 +32,25 @@
 .navbar-default {
     border-color: transparent;
     height: 120px;
-      background: #ffd625;
+      background: #fff;
 }
 .navbar-default .navbar-brand {
     color: black;
     font-size: 30px;
     font-weight: bold;
+
 }
 .navbar-default.affix .navbar-nav > li > a {
-    color: #00a1c9;
+    color: black;
+    font-size: 18px;
+    font-family: "Comfortaa-Light";
 }
 .navbar-default .navbar-nav > li > a {
     color: black;
-    font-weight: bold;
+
     margin-top: 25px;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: "Comfortaa-Light";
 }
 /*header
 {
@@ -64,6 +74,10 @@ img.img_logo
 {
   height: 20%;
   width: 20%;
+}
+ul.nav.navbar-nav.navbar-right
+{
+  background: #fff;
 }
 .video-wrapper {
 	max-width: 100%;
@@ -159,9 +173,6 @@ h3.text_payment
   margin-top: 0px;
   margin-bottom: 30px;
 }
-em{
-color: #b40060;
-}
 #zone_infos
 {
     background: #ffd625;
@@ -170,4 +181,9 @@ color: #b40060;
 }
 aside{
   height: 500px;
+}
+article{
+  background-color:  #f4f4f4;
+  padding-bottom: 70px;
+  padding-top: 70px;
 }
