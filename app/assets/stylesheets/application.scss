@@ -1,6 +1,7 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import "font-awesome-sprockets";
  @import "font-awesome";
  @font-face
  {
@@ -202,4 +203,13 @@ article.index{
 #paypay
 {
     font-family: "Comfortaa-Light";
+}
+h1.text-pay
+{
+  font-family: "Comfortaa-Light";
+  font-size: 30px;
+}
+h3.text-pay
+{
+  font-family: "Comfortaa-Light";
 }
