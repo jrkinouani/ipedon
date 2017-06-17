@@ -27,7 +27,7 @@
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-        <%= link_to(image_tag("/logo_ipe.png", :alt => "home image", class: "img_logo"), root_path) %>
+         <a id="titre_site" class="navbar-brand" href="#header"><img id="logo" src="logo_ipe.png"></a>
        </div>
        <div id="navbar" class="navbar-collapse collapse">
 
@@ -36,59 +36,53 @@
               <a href="#" class="scroll-link" data-id="africa">Qui sommes nous </a>
            </li>
            <li>
-               <a href="#" class="scroll-link" data-id="chiffres">Nos chiffres</a>
-           </li>
+               <a href="#" class="scroll-link" data-id="chiffres">Chiffres clés</a>
+            </li >
            <li>
                <a href="#" class="scroll-link" data-id="contact">Contact</a>
-            <li >
+            </li >
+            <li>
                <a href="#" class="scroll-link" data-id="zone_don" role="button"><b>FAIRE UN DON</b></a>
+             </li>
 
-    </li>
          </ul>
-       </div><!--/.nav-collapse -->
+       </div>
      </div>
    </nav>
 
+   <!--<nav class="navbar navbar-default" role="navigation">
 
-    <!--<nav id="mainNavv" class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <%= link_to(image_tag("/logo_ipe.png", :alt => "home image", class: "img_logo"), root_path) %>
-
-        </div>
-
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="hidden">
-
-
-                   <li>
-                      <a href="#" class="scroll-link" data-id="africa">Qui sommes nous </a>
-                   </li>
-                   <li>
-                       <a href="#" class="scroll-link" data-id="chiffres">Nos chiffres</a>
-                   </li>
-                   <li>
-                       <a href="#" class="scroll-link" data-id="contact">Contact</a>
-                    <li >
-                       <a href="#" class="scroll-link" data-id="zone_don" role="button"><b>FAIRE UN DON</b></a>
-
-            </li>
-          </ul>
-        </div>
+      <div class="navbar-header centre">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a id="titre_site" class="navbar-brand" href="#header"><img id="logo" src="logo_ipe.png"></a>
 
       </div>
 
-    </nav>-->
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+        <ul class="  nav navbar-nav navbar-right">
+          <li>
+             <a href="#" class="scroll-link" data-id="africa">Qui sommes nous </a>
+          </li>
+          <li>
+              <a href="#" class="scroll-link" data-id="chiffres">Chiffres clés</a>
+           <li >
+          <li>
+              <a href="#" class="scroll-link" data-id="contact">Contact</a>
+           <li >
+              <a href="#" class="scroll-link" data-id="zone_don" role="button"><b>FAIRE UN DON</b></a>
+
+   </li>
+        </ul>
+      </div>
+    </div>
+  </nav>-->
 
 
     <%= yield %>
@@ -126,13 +120,7 @@
 
 
 
-    <script>
-   $('#mainNavv').affix({
-       offset: {
-           top: 100
-         }
-       })
-   </script>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>

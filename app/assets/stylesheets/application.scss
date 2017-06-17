@@ -3,6 +3,11 @@
  @import "bootstrap";
  @import "font-awesome-sprockets";
  @import "font-awesome";
+ @media only screen and (max-width: 766px) {
+.collapsing, .in {background-color: #fff;}
+.collapsing ul li a, .in ul li a {color: #555!important;}
+.collapsing ul li a:hover, .in ul li a:hover {color: black !important;}
+}
  @font-face
  {
    font-family: "Comfortaa";
@@ -13,6 +18,7 @@
 {
   height: 300px;
 }
+
 .navbar-default
   {
     -webkit-transition: all .35s;
@@ -21,36 +27,30 @@
     padding: 15px 0;
     background: transparent;
     border-radius: transparent;
-    /* Add additional styles here for the UNCOLLAPSED state */
-  }
-  .navbar-default.affix {
-    padding: 0;
-    background: #fff;
 
-    /* Add additional styles here for the COLLAPSED state */
   }
 .navbar-default {
     border-color: transparent;
     height: 120px;
       background: #fff;
 }
-.navbar-default .navbar-brand {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
+
+img#logo
+{
+  height: 500%;
 
 }
-.navbar-default.affix .navbar-nav > li > a {
-    color: black;
-    font-size: 18px;
-    font-size-adjust: auto;
-    font-family: "Comfortaa-Light";
+ul.nav.navbar-nav.navbar-right
+{
+  padding-top:40px;
+}
+button.navbar-toggle
+{
+  margin-top: 30px;
 }
 .navbar-default .navbar-nav > li > a {
     color: black;
-
-
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Comfortaa-Light";
 }
 /*header
@@ -75,10 +75,6 @@ img.img_logo
 {
   height: 20%;
   width: 20%;
-}
-ul.nav.navbar-nav.navbar-right
-{
-  background: #fff;
 }
 .video-wrapper {
 	max-width: 100%;
@@ -107,6 +103,7 @@ h2.title_mission
 }
 h1.title
 {
+  margin-top: 80px;
   margin-bottom: 20px;
   font-size: 3.8rem !important;
   color: #00a1c9;
